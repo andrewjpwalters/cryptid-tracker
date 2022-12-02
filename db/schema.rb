@@ -17,7 +17,7 @@ ActiveRecord::Schema.define(version: 2022_12_02_042644) do
 
   create_table "cryptids", force: :cascade do |t|
     t.string "name"
-    t.text "descrition"
+    t.text "description"
     t.string "image_url"
     t.bigint "user_id", null: false
     t.datetime "created_at", precision: 6, null: false

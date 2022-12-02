@@ -2,7 +2,7 @@ class CreateCryptids < ActiveRecord::Migration[6.1]
   def change
     create_table :cryptids do |t|
       t.string :name
-      t.text :descrition
+      t.text :description
       t.string :image_url
       t.belongs_to :user, null: false, foreign_key: true
 
