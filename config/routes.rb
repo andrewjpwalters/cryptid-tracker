@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   
+  resources :locations
   resources :cryptids
   resources :users
   # Routing logic: fallback requests for React Router.
