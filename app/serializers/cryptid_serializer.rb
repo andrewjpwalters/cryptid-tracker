@@ -1,4 +1,4 @@
 class CryptidSerializer < ActiveModel::Serializer
-  attributes :id, :name, :descrition, :image_url
+  attributes :id, :name, :description, :image_url
   has_one :user
 end
