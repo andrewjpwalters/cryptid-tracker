@@ -1,4 +1,5 @@
 import { Route, Switch } from "react-router-dom";
+import NavBar from "./NavBar";
 import Home from "./Home";
 import Cryptid from "./Cryptid";
 import SubmitNew from "./SubmitNew";
@@ -6,6 +7,7 @@ import SubmitNew from "./SubmitNew";
 function App() {
   return (
     <div>
+      <NavBar />
       <h1>Hello from App!</h1>
       <Switch>
         <Route exact path="/cryptid">
