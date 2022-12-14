@@ -1,7 +1,7 @@
 import { Route, Switch } from "react-router-dom";
 import NavBar from "./NavBar";
 import Home from "./Home";
-import Cryptid from "./Cryptid";
+import CryptidList from "./CryptidList";
 import SubmitNew from "./SubmitNew";
 
 function App() {
@@ -11,7 +11,7 @@ function App() {
       <h1>Hello from App!</h1>
       <Switch>
         <Route exact path="/cryptid">
-          <Cryptid />
+          <CryptidList />
         </Route>
         <Route exact path="/submit">
           <SubmitNew />
