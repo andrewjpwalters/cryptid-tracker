@@ -7,11 +7,6 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 puts "Seeding!"
 
-Cryptid.destroy_all
-Location.destroy_all
-Post.destroy_all
-User.destroy_all
-
 User.create(username: "dave123", password_digest: "123")
 User.create(username: "caitlin345", password_digest: "123")
 User.create(username: "steveo456", password_digest: "123")
