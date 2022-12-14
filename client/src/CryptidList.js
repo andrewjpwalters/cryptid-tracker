@@ -13,9 +13,9 @@ function CryptidList({ onAddPost }) {
     })
 
     useEffect(() => {
-        fetch("http://localhost:3000/cryptids")
+        fetch("/cryptids")
             .then((r) => r.json())
-            .then((cryptids) => setCryptids(cryptids))
+            .then(setCryptids)
     }, []);
 
     function handleSubmit(e) {
@@ -68,7 +68,15 @@ function CryptidList({ onAddPost }) {
                 />
                 <button type="submit">Submit</button>
             </form>
-            <Cryptid cryptids={cryptids} />
+            {cryptids.map((cryptid) => (
+                <Cryptid
+                    key={cryptid.id}
+                    id={cryptid.id}
+                    name={cryptid.name}
+                    img_url={cryptid.image_url}
+                    description={cryptid.description}
+                />
+            ))}
         </>
     )
 }
